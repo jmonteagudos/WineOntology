@@ -1,0 +1,516 @@
+@prefix : <http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#> .
+
+<http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology> rdf:type owl:Ontology ;
+                                                                             rdfs:comment """Ontology Name: Spanish Wines Ontology
+Author: José Manuel Monteagudo Sánchez""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety
+:hasGrapeVariety rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Wine ;
+                 rdfs:range :GrapeVariety ;
+                 rdfs:comment "Object Property que representa la relación entre un vino y la variedad de uva o uvas utilizadas en su elaboración" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion
+:hasRegion rdf:type owl:ObjectProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range :Region ;
+           rdfs:comment "Object Property que representa la relación entre un vino y la región a la que pertenece" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer
+:hasReviewer rdf:type owl:ObjectProperty ;
+             rdfs:domain :Wine ;
+             rdfs:range :Reviewer .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing
+:hasWinePairing rdf:type owl:ObjectProperty ;
+                rdfs:domain :Wine ;
+                rdfs:range :WinePairing ;
+                rdfs:comment "Object Property que representa la relación entre un vino y un plato o comida con la que se puede maridar" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery
+:hasWinery rdf:type owl:ObjectProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range :Winery ;
+           rdfs:comment "Object Property que representa la relación entre un vino y la bodega o viñedo que lo produce" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity
+:hasAcidity rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Wine ,
+                        :WineAcidity ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward
+:hasAward rdf:type owl:DatatypeProperty ;
+          rdfs:domain :WineAward ;
+          rdfs:range xsd:string ;
+          rdfs:comment "DataProperty para representar los premios o reconocimientos recibidos por un vino, por ejemplo, \"Medalla de Oro\", \"Mejor Vino del Año\", etc" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore
+:hasBodyScore rdf:type owl:DatatypeProperty ;
+              rdfs:domain :WineBody ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "DataProperty para representar el cuerpo o la plenitud de un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice
+:hasPrice rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PriceRange ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "DataProperty para representar el rango de precios de un vino, por ejemplo, \"económico\", \"moderado\", \"alto\", etc" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality
+:hasQuality rdf:type owl:DatatypeProperty ;
+            rdfs:domain :WineType ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:domain :WineRating ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview
+:hasReview rdf:type owl:DatatypeProperty ;
+           rdfs:domain :WineReview ;
+           rdfs:range xsd:string ;
+           rdfs:comment "DataProperty para representar el texto o contenido de una revisión de vino realizada por un crítico o revisor" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear
+:hasYear rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Vintage ;
+         rdfs:range xsd:int ;
+         rdfs:comment "DataProperty que representa el año de cosecha de un vino" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño
+:Albariño rdf:type owl:Class ;
+          rdfs:subClassOf :GrapeVariety .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux
+:Bordeaux rdf:type owl:Class ;
+          rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine
+:FortifiedWine rdf:type owl:Class ;
+               rdfs:subClassOf :WineType ;
+               rdfs:comment "Clase que representa vinos fortificados" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha
+:Garnacha rdf:type owl:Class ;
+          rdfs:subClassOf :GrapeVariety .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety
+:GrapeVariety rdf:type owl:Class ;
+              rdfs:subClassOf :Wine ;
+              rdfs:comment "Clase que representa la variedad de uva utilizada en la producción de vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez
+:Jerez rdf:type owl:Class ;
+       rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley
+:NapaValley rdf:type owl:Class ;
+            rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety
+:OtherWineVariety rdf:type owl:Class ;
+                  rdfs:subClassOf :GrapeVariety .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange
+:PriceRange rdf:type owl:Class ;
+            rdfs:subClassOf :Wine ;
+            rdfs:comment "Clase que representa un rango de precios para un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine
+:RedWine rdf:type owl:Class ;
+         rdfs:subClassOf :WineType ;
+         rdfs:comment "Clase que representa vinos tintos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Wine ;
+        rdfs:comment "Clase que representa una región o denominación de origen del vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer
+:Reviewer rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Clase que representa una persona o entidad que realiza una revisión o evaluación de un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero
+:RiberaDelDuero rdf:type owl:Class ;
+                rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja
+:Rioja rdf:type owl:Class ;
+       rdfs:subClassOf :Region .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine
+:RoseWine rdf:type owl:Class ;
+          rdfs:subClassOf :WineType ;
+          rdfs:comment "Clase que representa vinos rosados" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine
+:SparklingWine rdf:type owl:Class ;
+               rdfs:subClassOf :WineType ;
+               rdfs:comment "Clase que representa vinos espumosos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo
+:Tempranillo rdf:type owl:Class ;
+             rdfs:subClassOf :GrapeVariety .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo
+:Verdejo rdf:type owl:Class ;
+         rdfs:subClassOf :GrapeVariety .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage
+:Vintage rdf:type owl:Class ;
+         rdfs:subClassOf :Wine ;
+         rdfs:comment "Clase que representa el año de cosecha de un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine
+:WhiteWine rdf:type owl:Class ;
+           rdfs:subClassOf :WineType ;
+           rdfs:comment "Clase que representa vinos blancos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine
+:Wine rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasWinery ;
+                            owl:allValuesFrom :Wine
+                          ] .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity
+:WineAcidity rdf:type owl:Class ;
+             rdfs:subClassOf :Wine ;
+             rdfs:comment "Clase que representa la acidez de un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward
+:WineAward rdf:type owl:Class ;
+           rdfs:subClassOf :Wine ;
+           rdfs:comment "Clase que representa un premio otorgado a un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody
+:WineBody rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Clase que representa el cuerpo o estructura de un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing
+:WinePairing rdf:type owl:Class ;
+             rdfs:subClassOf :Wine ;
+             rdfs:comment "Clase que representa una recomendación de maridaje o combinación de un vino con alimentos" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating
+:WineRating rdf:type owl:Class ;
+            rdfs:subClassOf :Wine ;
+            rdfs:comment "Clase que representa una calificación o puntuación dada a un vino" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview
+:WineReview rdf:type owl:Class ;
+            rdfs:subClassOf :Wine ;
+            rdfs:comment "Clase que representa una revisión o evaluación de un vino realizada por un revisor" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType
+:WineType rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Clase que representa un vino en general" ;
+          rdfs:sameAs "<http://dbpedia.org/ontology/Wine>" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery
+:Winery rdf:type owl:Class ;
+        rdfs:subClassOf :Wine ;
+        rdfs:comment "Clase que representa una bodega productora de vino" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero
+:AsadoDeCordero rdf:type owl:NamedIndividual ,
+                         :WinePairing ;
+                rdfs:comment "Instancia de maridaje" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres
+:BodegasTorres rdf:type owl:NamedIndividual ,
+                        :Winery ;
+               :hasRegion :RiberaDelDuero ;
+               rdfs:comment "Instancia de Winery" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio
+:JuanAntonio rdf:type owl:NamedIndividual ,
+                      :Reviewer ;
+             rdfs:comment "Instancia de Reviewer" .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero
+:RiberaDelDuero rdf:type owl:NamedIndividual ,
+                         :Region ,
+                         :RiberaDelDuero .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo
+:Tempranillo rdf:type owl:NamedIndividual ,
+                      :GrapeVariety ,
+                      :Tempranillo .
+
+
+###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico
+:VegaSiciliaUnico rdf:type owl:NamedIndividual ,
+                           :WineType ;
+                  :hasGrapeVariety :Tempranillo ;
+                  :hasRegion :RiberaDelDuero ;
+                  :hasReviewer :JuanAntonio ;
+                  :hasWinePairing :AsadoDeCordero ;
+                  :hasWinery :BodegasTorres ;
+                  :hasAcidity 4.5 ;
+                  :hasAward "Premio al mejor vino de España 2023" ;
+                  :hasBodyScore 5.0 ;
+                  :hasPrice 300.0 ;
+                  :hasRating 4.8 ;
+                  :hasReview "Buen sabor en boca, agradable e intenso" ;
+                  :hasYear "2010"^^xsd:int ;
+                  rdfs:comment "Instancia de un vino" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:RiberaDelDuero rdfs:comment "Instancia de Region" .
+
+
+:Tempranillo rdfs:comment "Instancia de variedad de uva" ;
+             rdfs:sameAs "<http://dbpedia.org/resource/Tempranillo>" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAward ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 70 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#equal> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 0 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Baja"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAcidity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 90 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 3 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Alta"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPrice ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 80 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#p> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 50 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Media"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

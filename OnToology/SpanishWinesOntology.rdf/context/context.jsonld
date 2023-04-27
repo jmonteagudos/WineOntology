@@ -1,0 +1,149 @@
+{
+  "@context" : {
+    "Albariño" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño"
+    },
+    "RiberaDelDuero" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"
+    },
+    "WineReview" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"
+    },
+    "hasPrice" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "WineType" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"
+    },
+    "hasWinery" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery",
+      "@type" : "@id"
+    },
+    "WinePairing" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"
+    },
+    "FortifiedWine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine"
+    },
+    "WineRating" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"
+    },
+    "Rioja" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja"
+    },
+    "Vintage" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"
+    },
+    "hasReview" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasAcidity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "PriceRange" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"
+    },
+    "Garnacha" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha"
+    },
+    "hasQuality" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OtherWineVariety" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety"
+    },
+    "WineAward" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"
+    },
+    "hasGrapeVariety" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety",
+      "@type" : "@id"
+    },
+    "WhiteWine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine"
+    },
+    "hasWinePairing" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing",
+      "@type" : "@id"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"
+    },
+    "SparklingWine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine"
+    },
+    "WineAcidity" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"
+    },
+    "RoseWine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo"
+    },
+    "hasReviewer" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer",
+      "@type" : "@id"
+    },
+    "hasBodyScore" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasYear" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Reviewer" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"
+    },
+    "Bordeaux" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux"
+    },
+    "hasAward" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasRegion" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion",
+      "@type" : "@id"
+    },
+    "NapaValley" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"
+    },
+    "GrapeVariety" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"
+    },
+    "WineBody" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"
+    },
+    "RedWine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine"
+    },
+    "Jerez" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"
+    }
+  }
+}
