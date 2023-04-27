@@ -62,8 +62,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity
 :hasAcidity rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Wine ,
-                        :WineAcidity ;
+            rdfs:domain :WineAcidity ;
             rdfs:range xsd:decimal ;
             rdfs:comment "DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos" .
 
@@ -157,11 +156,6 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
             rdfs:subClassOf :Region .
 
 
-###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety
-:OtherWineVariety rdf:type owl:Class ;
-                  rdfs:subClassOf :GrapeVariety .
-
-
 ###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange
 :PriceRange rdf:type owl:Class ;
             rdfs:subClassOf :Wine ;
@@ -231,11 +225,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine
-:Wine rdf:type owl:Class ;
-      owl:equivalentClass [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasWinery ;
-                            owl:allValuesFrom :Wine
-                          ] .
+:Wine rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity
@@ -285,6 +275,24 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 :Winery rdf:type owl:Class ;
         rdfs:subClassOf :Wine ;
         rdfs:comment "Clase que representa una bodega productora de vino" .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasGrapeVariety ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Wine
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasRegion ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Wine
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasWinery ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Wine
+                              ] .
 
 
 #################################################################
@@ -422,56 +430,6 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                      ] ;
                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAcidity ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
-                                                                ] ;
-                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
-                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
-                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
-                                                                                                                          rdf:first <urn:swrl:var#r> ;
-                                                                                                                          rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                     rdf:first 90 ;
-                                                                                                                                     rdf:rest rdf:nil
-                                                                                                                                   ]
-                                                                                                                        ]
-                                                                           ] ;
-                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
-                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
-                                                                                                                                     rdf:first <urn:swrl:var#a> ;
-                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first 3 ;
-                                                                                                                                                rdf:rest rdf:nil
-                                                                                                                                              ]
-                                                                                                                                   ]
-                                                                                      ] ;
-                                                                            rdf:rest rdf:nil
-                                                                          ]
-                                                               ]
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> "Alta"
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPrice ;
                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
@@ -508,6 +466,56 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
                                                        <http://www.w3.org/2003/11/swrl#argument2> "Media"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAcidity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#r> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 90 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 3 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasQuality ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "Alta"
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
