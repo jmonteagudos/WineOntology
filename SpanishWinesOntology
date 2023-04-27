@@ -1,0 +1,823 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2023/3/untitled-ontology-15"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/usuario/ontologies/2023/3/untitled-ontology-15">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology Name: Spanish Wines Ontology
+Author: José Manuel Monteagudo Sánchez</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+            <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal>Premio al mejor vino de España 2023</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal>Buen sabor en boca, agradable e intenso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2010</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear"/>
+        <Class IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#a"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl:var#a"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Literal>Alta</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#a"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">70</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#equal">
+                <Variable IRI="urn:swrl:var#a"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Literal>Baja</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#p"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Literal>Media</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero</IRI>
+        <Literal>Instancia de maridaje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres</IRI>
+        <Literal>Instancia de Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine</IRI>
+        <Literal>Clase que representa vinos fortificados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety</IRI>
+        <Literal>Clase que representa la variedad de uva utilizada en la producción de vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio</IRI>
+        <Literal>Instancia de Reviewer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange</IRI>
+        <Literal>Clase que representa un rango de precios para un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine</IRI>
+        <Literal>Clase que representa vinos tintos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region</IRI>
+        <Literal>Clase que representa una región o denominación de origen del vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer</IRI>
+        <Literal>Clase que representa una persona o entidad que realiza una revisión o evaluación de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero</IRI>
+        <Literal>Instancia de Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine</IRI>
+        <Literal>Clase que representa vinos rosados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine</IRI>
+        <Literal>Clase que representa vinos espumosos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo</IRI>
+        <Literal>Instancia de variedad de uva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo</IRI>
+        <Literal>&lt;http://dbpedia.org/resource/Tempranillo&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico</IRI>
+        <Literal>Instancia de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage</IRI>
+        <Literal>Clase que representa el año de cosecha de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine</IRI>
+        <Literal>Clase que representa vinos blancos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity</IRI>
+        <Literal>Clase que representa la acidez de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward</IRI>
+        <Literal>Clase que representa un premio otorgado a un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody</IRI>
+        <Literal>Clase que representa el cuerpo o estructura de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing</IRI>
+        <Literal>Clase que representa una recomendación de maridaje o combinación de un vino con alimentos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating</IRI>
+        <Literal>Clase que representa una calificación o puntuación dada a un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview</IRI>
+        <Literal>Clase que representa una revisión o evaluación de un vino realizada por un revisor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType</IRI>
+        <Literal>Clase que representa un vino en general</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType</IRI>
+        <Literal>&lt;http://dbpedia.org/ontology/Wine&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery</IRI>
+        <Literal>Clase que representa una bodega productora de vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity</IRI>
+        <Literal>DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward</IRI>
+        <Literal>DataProperty para representar los premios o reconocimientos recibidos por un vino, por ejemplo, &quot;Medalla de Oro&quot;, &quot;Mejor Vino del Año&quot;, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore</IRI>
+        <Literal>DataProperty para representar el cuerpo o la plenitud de un vino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety</IRI>
+        <Literal>Object Property que representa la relación entre un vino y la variedad de uva o uvas utilizadas en su elaboración</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice</IRI>
+        <Literal>DataProperty para representar el rango de precios de un vino, por ejemplo, &quot;económico&quot;, &quot;moderado&quot;, &quot;alto&quot;, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating</IRI>
+        <Literal>DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion</IRI>
+        <Literal>Object Property que representa la relación entre un vino y la región a la que pertenece</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview</IRI>
+        <Literal>DataProperty para representar el texto o contenido de una revisión de vino realizada por un crítico o revisor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing</IRI>
+        <Literal>Object Property que representa la relación entre un vino y un plato o comida con la que se puede maridar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery</IRI>
+        <Literal>Object Property que representa la relación entre un vino y la bodega o viñedo que lo produce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear</IRI>
+        <Literal>DataProperty que representa el año de cosecha de un vino</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
