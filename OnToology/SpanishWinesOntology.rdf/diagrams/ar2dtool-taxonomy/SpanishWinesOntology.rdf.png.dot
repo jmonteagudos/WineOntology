@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "SpanishWinesOntology:Tempranillo" "SpanishWinesOntology:Verdejo" "SpanishWinesOntology:RoseWine" "SpanishWinesOntology:WineAward" "SpanishWinesOntology:FortifiedWine" "SpanishWinesOntology:GrapeVariety" "SpanishWinesOntology:SparklingWine" "SpanishWinesOntology:NapaValley" "SpanishWinesOntology:Garnacha" "SpanishWinesOntology:Albariño" "SpanishWinesOntology:WineReview" "SpanishWinesOntology:WhiteWine" "SpanishWinesOntology:PriceRange" "SpanishWinesOntology:RedWine" "SpanishWinesOntology:Bordeaux" "SpanishWinesOntology:Jerez" "SpanishWinesOntology:WineAcidity" "SpanishWinesOntology:Vintage" "SpanishWinesOntology:Reviewer" "SpanishWinesOntology:Rioja" "SpanishWinesOntology:OtherWineVariety" "SpanishWinesOntology:WineType" "SpanishWinesOntology:WineRating" "SpanishWinesOntology:RiberaDelDuero" "SpanishWinesOntology:WinePairing" "SpanishWinesOntology:WineBody" "SpanishWinesOntology:Wine" "SpanishWinesOntology:Winery" "SpanishWinesOntology:Region" ; /*classes style*/
+node [shape = rectangle, color="black"]; "SpanishWinesOntology:Tempranillo" "SpanishWinesOntology:Verdejo" "SpanishWinesOntology:RoseWine" "SpanishWinesOntology:WineAward" "SpanishWinesOntology:FortifiedWine" "SpanishWinesOntology:GrapeVariety" "SpanishWinesOntology:SparklingWine" "SpanishWinesOntology:NapaValley" "SpanishWinesOntology:Garnacha" "SpanishWinesOntology:Albariño" "SpanishWinesOntology:WineReview" "SpanishWinesOntology:WhiteWine" "SpanishWinesOntology:PriceRange" "SpanishWinesOntology:RedWine" "SpanishWinesOntology:Bordeaux" "SpanishWinesOntology:Jerez" "SpanishWinesOntology:WineAcidity" "SpanishWinesOntology:Reviewer" "SpanishWinesOntology:Rioja" "SpanishWinesOntology:Vintage" "SpanishWinesOntology:WineType" "SpanishWinesOntology:WineRating" "SpanishWinesOntology:RiberaDelDuero" "SpanishWinesOntology:WinePairing" "SpanishWinesOntology:WineBody" "SpanishWinesOntology:Wine" "SpanishWinesOntology:Winery" "SpanishWinesOntology:Region" ; /*classes style*/
 	"SpanishWinesOntology:WineReview" -> "SpanishWinesOntology:Wine" [ label = "rdfs:subClassOf" ];
 	"SpanishWinesOntology:Bordeaux" -> "SpanishWinesOntology:Region" [ label = "rdfs:subClassOf" ];
 	"SpanishWinesOntology:Verdejo" -> "SpanishWinesOntology:GrapeVariety" [ label = "rdfs:subClassOf" ];
@@ -29,6 +29,5 @@ node [shape = rectangle, color="black"]; "SpanishWinesOntology:Tempranillo" "Spa
 	"SpanishWinesOntology:Region" -> "SpanishWinesOntology:Wine" [ label = "rdfs:subClassOf" ];
 	"SpanishWinesOntology:WineRating" -> "SpanishWinesOntology:Wine" [ label = "rdfs:subClassOf" ];
 	"SpanishWinesOntology:Vintage" -> "SpanishWinesOntology:Wine" [ label = "rdfs:subClassOf" ];
-	"SpanishWinesOntology:OtherWineVariety" -> "SpanishWinesOntology:GrapeVariety" [ label = "rdfs:subClassOf" ];
 
 }

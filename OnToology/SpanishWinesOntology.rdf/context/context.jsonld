@@ -23,6 +23,9 @@
     "Winery" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"
     },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
     "hasWinery" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery",
       "@type" : "@id"
@@ -59,9 +62,6 @@
     "hasQuality" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "OtherWineVariety" : {
-      "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#OtherWineVariety"
     },
     "WineAward" : {
       "@id" : "http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"
