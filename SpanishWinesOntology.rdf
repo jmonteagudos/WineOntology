@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology/"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:SpanishWinesOntology="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology">
+        <rdfs:comment>Ontology Name: Spanish Wines Ontology
+Author: José Manuel Monteagudo Sánchez</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+        <rdfs:comment>Object Property que representa la relación entre un vino y la variedad de uva o uvas utilizadas en su elaboración</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+        <rdfs:comment>Object Property que representa la relación entre un vino y la región a la que pertenece</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReviewer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinePairing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+        <rdfs:comment>Object Property que representa la relación entre un vino y un plato o comida con la que se puede maridar</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+        <rdfs:comment>Object Property que representa la relación entre un vino y la bodega o viñedo que lo produce</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DataProperty para representar los premios o reconocimientos recibidos por un vino, por ejemplo, &quot;Medalla de Oro&quot;, &quot;Mejor Vino del Año&quot;, etc</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasBodyScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>DataProperty para representar el cuerpo o la plenitud de un vino</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>DataProperty para representar el rango de precios de un vino, por ejemplo, &quot;económico&quot;, &quot;moderado&quot;, &quot;alto&quot;, etc</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>DataProperty para representar la calificación o puntuación de un vino dada por un crítico o una entidad de revisión de vinos</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasReview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DataProperty para representar el texto o contenido de una revisión de vino realizada por un crítico o revisor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>DataProperty que representa el año de cosecha de un vino</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Albariño">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Bordeaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#FortifiedWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:comment>Clase que representa vinos fortificados</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Garnacha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa la variedad de uva utilizada en la producción de vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Jerez">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#NapaValley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#PriceRange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa un rango de precios para un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RedWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:comment>Clase que representa vinos tintos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una región o denominación de origen del vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una persona o entidad que realiza una revisión o evaluación de un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Rioja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RoseWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:comment>Clase que representa vinos rosados</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#SparklingWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:comment>Clase que representa vinos espumosos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Verdejo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Vintage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa el año de cosecha de un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WhiteWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <rdfs:comment>Clase que representa vinos blancos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAcidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa la acidez de un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineAward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa un premio otorgado a un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineBody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa el cuerpo o estructura de un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una recomendación de maridaje o combinación de un vino con alimentos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una calificación o puntuación dada a un vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una revisión o evaluación de un vino realizada por un revisor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa un vino en general</rdfs:comment>
+        <rdfs:sameAs>&lt;http://dbpedia.org/ontology/Wine&gt;</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+        <rdfs:comment>Clase que representa una bodega productora de vino</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasGrapeVariety"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRegion"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasWinery"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Wine"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WinePairing"/>
+        <rdfs:comment>Instancia de maridaje</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Winery"/>
+        <SpanishWinesOntology:hasRegion rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+        <rdfs:comment>Instancia de Winery</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Reviewer"/>
+        <rdfs:comment>Instancia de Reviewer</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Region"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#GrapeVariety"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#VegaSiciliaUnico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#WineType"/>
+        <SpanishWinesOntology:hasGrapeVariety rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo"/>
+        <SpanishWinesOntology:hasRegion rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero"/>
+        <SpanishWinesOntology:hasReviewer rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#JuanAntonio"/>
+        <SpanishWinesOntology:hasWinePairing rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#AsadoDeCordero"/>
+        <SpanishWinesOntology:hasWinery rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#BodegasTorres"/>
+        <SpanishWinesOntology:hasAcidity rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</SpanishWinesOntology:hasAcidity>
+        <SpanishWinesOntology:hasAward>Premio al mejor vino de España 2023</SpanishWinesOntology:hasAward>
+        <SpanishWinesOntology:hasBodyScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</SpanishWinesOntology:hasBodyScore>
+        <SpanishWinesOntology:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</SpanishWinesOntology:hasPrice>
+        <SpanishWinesOntology:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</SpanishWinesOntology:hasRating>
+        <SpanishWinesOntology:hasReview>Buen sabor en boca, agradable e intenso</SpanishWinesOntology:hasReview>
+        <SpanishWinesOntology:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</SpanishWinesOntology:hasYear>
+        <rdfs:comment>Instancia de un vino</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#RiberaDelDuero">
+        <rdfs:comment>Instancia de Region</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#Tempranillo">
+        <rdfs:comment>Instancia de variedad de uva</rdfs:comment>
+        <rdfs:sameAs>&lt;http://dbpedia.org/resource/Tempranillo&gt;</rdfs:sameAs>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAward"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2>Baja</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasPrice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2>Media</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasAcidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2023/3/SpanishWinesOntology#hasQuality"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2>Alta</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
